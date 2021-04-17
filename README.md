@@ -11,14 +11,14 @@ We are using data from the National Basketball Association (NBA) in order to pre
 
 ## Resources
 
-### Data Sources: 
 
 ### Technology
-Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, SQLalchemy
-Using: Pandas, NumPy, SQLalchemy extensions and functions
-Algorithms:  
 
-## Source Data Description
+#### Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, SQLalchemy
+#### Using: Pandas, NumPy, SQLalchemy extensions and functions
+#### Algorithms:  
+
+### Source Data Description
 Data will be sourced for players and their respective teams.  Types of data utilized will be as follows:
 - Biometrics: height, weight, wingspan, etc; 
 - Performance: offense (3 pt %, FG %, FGA, etc)& defense (rebounds, steals, blocks, etc); 
