@@ -9,6 +9,15 @@ Predicting NBA Player & Team Performance
 ## Purpose 
 We are using data from the National Basketball Association (NBA) in order to predict player performance and the impact on match outcomes. We want to understand the predictive power of certain features and whether or not these inputs can be used to accurately predict player performance and match outcomes.
 
+## Resources
+
+### Data Sources: 
+
+### Technology
+Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, SQLalchemy
+Using: Pandas, NumPy, SQLalchemy extensions and functions
+Algorithms:  
+
 ## Source Data Description
 Data will be sourced for players and their respective teams.  Types of data utilized will be as follows:
 - Biometrics: height, weight, wingspan, etc; 
