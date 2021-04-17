@@ -14,10 +14,10 @@ We are using data from the National Basketball Association (NBA) in order to pre
 
 ### Technology
 
-#### Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, PostgreSQL
-#### Data Warehouse:  AWS
-#### Using: Pandas, NumPy, SQLalchemy extensions and functions
-#### Algorithms:  
+Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, PostgreSQL
+Data Warehouse:  AWS
+Using: Pandas, NumPy, SQLalchemy extensions and functions
+Algorithms:  
 
 ### Source Data Description
 Data will be sourced for players and their respective teams.  Types of data utilized will be as follows:
