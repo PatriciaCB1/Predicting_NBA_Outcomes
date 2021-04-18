@@ -21,7 +21,7 @@ We are using data from the National Basketball Association (NBA) in order to pre
 
 ### Source Data Description
 Data will be sourced for players and their respective teams.  Types of data utilized will be as follows:
-- Biometrics: height, weight, wingspan, etc; 
+- Player Biometrics: height, weight, wingspan, etc; 
 - Performance: offense (3 pt %, FG %, FGA, etc)& defense (rebounds, steals, blocks, etc); 
 - Teams: home, visitor, win streak, jersey type, etc.
 - Data will be sourced via API (NBA.com or other source) and web scraping.
