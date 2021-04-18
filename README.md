@@ -31,7 +31,7 @@ Data will be sourced for players and their respective teams.  Types of data util
 - How will players perform across key performance indicators (points, assists, steals, blocks, rebounds)?
 - Does the sum of individual player performance determine game outcomes?
 - Are there other “team” or “biometric” factors that determine game outcomes?
-- How will aggregate player performance inform team outcome (win vs. loss)?
+- How will aggregate player performance inform a team outcome (win vs. loss)?
 
 ## Approach
 - Create a classification model to determine game outcome (Win/ Loss)
