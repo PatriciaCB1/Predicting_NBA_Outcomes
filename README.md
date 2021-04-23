@@ -1,5 +1,5 @@
 # Predicting_NBA_Outcomes
-![Images/Player_Marque.png](Images/Player_Marque.png)
+![Images/Player_Marquee.png](Images/Player_Marquee.png)
 
 “I think it’s pretty important that you learn how to keep your own scoreboard and how to be focused on what truly matters over the long term.”
 -Sam Hinkie
@@ -11,7 +11,6 @@ Predicting NBA Player & Team Performance
 We are using data from the National Basketball Association (NBA) in order to predict player performance and the impact on match outcomes. We want to understand the predictive power of certain features and whether or not these inputs can be used to accurately predict player performance and match outcomes.
 
 ## Resources
-
 
 ### Technology
 
@@ -37,3 +36,11 @@ Data will be sourced for players and their respective teams.  Types of data util
 
 ## Approach
 - Create a classification model to determine game outcome (Win/ Loss)
+
+## Communications Protocol
+Team communicates over Slack channel "The-Dream-Team". Team will discuss roles and responsibilities before each deliverable and discuss additional areas of support and assistance.
+Week 1 Roles & Responsibilities
+- Square (Model): Josh Merenstein
+- Triangle (Database): Praveen Ravi
+- Circle (Visuals): Jerome Simmons
+- X (Tech Overseer): Patricia Chapin-Baley
