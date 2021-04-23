@@ -1,5 +1,5 @@
 # Predicting_NBA_Outcomes
-![Images/Player_Marquee.png](Images/Player_Marquee.png)
+![Images/Player_Marque.png](Images/Player_Marque.png)
 
 “I think it’s pretty important that you learn how to keep your own scoreboard and how to be focused on what truly matters over the long term.”
 -Sam Hinkie
