@@ -43,4 +43,4 @@ Week 1 Roles & Responsibilities
 - Square (Model): Josh Merenstein
 - Triangle (Database): Praveen Ravi
 - Circle (Visuals): Jerome Simmons
-- X (Tech Overseer): Patricia Chapin-Baley
+- X (Tech Overseer + Presentation Deck): Patricia Chapin-Bayley
