@@ -20,19 +20,16 @@ We are using data from the National Basketball Association (NBA) in order to pre
 - Algorithms: Random Forest model - will be testing additional models
 
 ### Source Data Description
-Data will be sourced for players and their respective teams.  Types of data utilized will be as follows:
-- Player Biometrics: height, weight, wingspan, etc; 
-- Player Performance: offense (3 pt %, FG %, FGA, etc) & defense (rebounds, steals, blocks, etc); 
+Data will be sourced for teams.  Types of data utilized will be as follows:
+- Team Performance: offense (3 pt %, FG %, FGA, etc) & defense (rebounds, steals, blocks, etc); 
 - Team Performance: home, visitor, win streak, jersey type, etc.
 - Other: Referee, Day of Week, Start Time, etc.
-- Data will be sourced via API (NBA.com or other source) and web scraping.
+- Data will be sourced via API (NBA.com or other source).
 
 ## Research Questions
-- What features are important to determine player performance? 
-- How will players perform across key performance indicators (points, assists, steals, blocks, rebounds)?
-- Does the sum of individual player performance determine game outcomes?
+- What features are important to determine team performance? 
+- How will teams perform across key performance indicators (points, assists, steals, blocks, rebounds)?
 - Are there other “team” or “biometric” factors that determine game outcomes?
-- How will aggregate player performance inform a team outcome (win vs. loss)?
 
 ## Approach
 - Create a classification model to determine game outcome (Win/ Loss)
