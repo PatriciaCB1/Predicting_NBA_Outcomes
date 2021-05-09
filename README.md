@@ -38,8 +38,9 @@ Data will be sourced for players and their respective teams.  Types of data util
 - Create a classification model to determine game outcome (Win/ Loss)
 
 ## Communications Protocol
-Team communicates over Slack channel "The-Dream-Team". Team will discuss roles and responsibilities before each deliverable and discuss additional areas of support and assistance.
-Week 1 Roles & Responsibilities
+Team communicates over Slack channel "The-Dream-Team". Team meets over Zoom on Tuesdays, Thursdays, and Sundays to review, assign, and collaborate on segment deliverables. Team will discuss roles and responsibilities before each deliverable and discuss additional areas of support and assistance. Team members upload changes into respective branches and merge changes into main branch during meetings for group review.
+
+Overall Roles & Responsibilities
 - Square (Model): Josh Merenstein
 - Triangle (Database): Praveen Ravi
 - Circle (Visuals): Jerome Simmons
