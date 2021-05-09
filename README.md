@@ -24,15 +24,15 @@ As a team of NBA fans (and errant gamblers!) we were curious to see if we could 
 - Algorithms: Random Forest model - will be testing additional models
 
 ### Source Data Description
-Kaggle: NBA game data 2004 - 2020
-Original Source:  https://www.nba.com/stats/
-Kaggle Source:  https://www.kaggle.com/nathanlauga/nba-games
-Data files used: 
-  - games.csv
-  - games_details.csv
-  - players.csv
-  - ranking.csv
-  - teams.csv
+- Kaggle: NBA game data 2004 - 2020
+- Original Source:  https://www.nba.com/stats/
+- Kaggle Source:  https://www.kaggle.com/nathanlauga/nba-games
+- Data files used: 
+    - games.csv
+    - games_details.csv
+    - players.csv
+    - ranking.csv
+    - teams.csv
 
 
 ## Research Questions
