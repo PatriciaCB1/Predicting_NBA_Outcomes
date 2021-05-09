@@ -64,13 +64,17 @@ Data Cleaning Process Entailed:
 - Started with over 50 columns that could provide features of interest with 2 key prominent identified segments:
   - Offensive Stats
   - Defensive Stats
-- Identifying redundant columns
+- Identifying redundant / unusable columns
   - Data type
   - Duplicate stats/ metrics 
 - Attempt to identify what is causing overfitting of the model
 - Database relationship mapping 
 - Data types in each column across all data sets to ensure data types would work within our model
 - Creating: new rows to split out Home / Away and a new column for Team Win / Loss
+
+![Images/ERD.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Database_ERD_Final.png)
+
+
 
 ## Analysis
 
