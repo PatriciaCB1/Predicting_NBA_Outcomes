@@ -9,7 +9,7 @@ Predicting NBA Game Outcomes
 - Utilize data from the National Basketball Association (NBA) 
 - Predict: game outcomes
 - Understand:  predictive power of certain features
-- Determine:  whether the chosen inputs / features can be used to accurately predict match outcomes
+- Determine:  whether the chosen inputs / features can be used to accurately predict game outcomes
 
 ## Purpose 
 As a team of NBA fans (and errant gamblers!) we were curious to see if we could figure out a way to predict the impact of player performance and other game features on the outcome of NBA games.
