@@ -100,6 +100,14 @@ Analysis to be undertaken:
   - Did not use random oversampling, undersampling or combination
   - Sample robust enough to not require enhancement
 
+## Presentation Slides
+
+https://docs.google.com/presentation/d/18Ij9W_wmpUUDsM6LSUpxQwxCbR3NeJfk8vHeC7B2Zq4/edit?usp=sharing
+
+## Dashboard Mock Up
+
+https://docs.google.com/presentation/d/103ir_JitNAbp07oyHvgJAFLcFKm4zC7HRJB4_MHrRJg/edit?usp=sharing
+
 
 ## Communications Protocol
 Team communicates over Slack channel "The-Dream-Team". Team meets over Zoom on Tuesdays, Thursdays, and Sundays to review, assign, and collaborate on segment deliverables. Team will discuss roles and responsibilities before each deliverable and discuss additional areas of support and assistance. Team members upload changes into respective branches and merge changes into main branch during meetings for group review.
