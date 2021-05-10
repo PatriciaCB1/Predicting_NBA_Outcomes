@@ -72,6 +72,8 @@ Data Cleaning Process Entailed:
 - Data types in each column across all data sets to ensure data types would work within our model
 - Creating: new rows to split out Home / Away and a new column for Team Win / Loss
 
+### ERD Database Relationship Mapping
+
 ![Images/ERD.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Database_ERD_Final.png)
 
 
