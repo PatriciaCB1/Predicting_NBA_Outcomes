@@ -64,7 +64,7 @@ Data Cleaning Process Entailed:
 - Started with over 50 columns that could provide features of interest with 2 key prominent identified segments:
   - Offensive Stats
   - Defensive Stats
-- Identifying redundant / unusable columns
+- Identifying redundant / unusable columns 
   - Data type
   - Duplicate stats/ metrics 
 - Attempt to identify what is causing overfitting of the model
