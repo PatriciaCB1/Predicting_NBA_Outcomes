@@ -83,7 +83,7 @@ Data preprocessing
     - Team name
     - Away team or Home team
     - Conference (Western or Eastern)
-    - 
+    
 These average statistics were applied to each game, and team performance stats for individual games were dropped from our dataset. We then trained our model to assess whether or not the home team won
 
 ### Data Exploration
