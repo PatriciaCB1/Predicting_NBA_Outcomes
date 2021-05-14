@@ -97,6 +97,8 @@ Analysis to be undertaken:
 
 For our initial statistical analysis we ran a multiple regression model on our data. For this we first removed any columns or data types that we felt would not effect the outcomes of the games or would create issues in running the regression. From there we used the statsmodels module in Python to get our OLS Regression Results data that gave us all of our statistical data on how the different columns and features related to the outcome of having the Home Team Win. What we found was there was multiple columns that had statistically significant effects on the outcomes of games such as Home Team Points, Away Team FGM, Home Team Rebounds, and Away Team Assists. By running this initial statistical analysis it gave us a good starting point of seeing what features had the most significant impacts on the Home Team Wins.
 
+![Images/Multiple%20Regression%20Stats.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/Multiple%20Regression%20Stats.png)
+
 ## Machine Learning Model
 
 ### Approach
@@ -113,6 +115,14 @@ For our initial statistical analysis we ran a multiple regression model on our d
     - Random Forest when refined provided 73.6% accuracy 
     - Logistic Regression provided 67% accuracy
 
+![Images/RF_AUC.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_AUC.png)
+
+![Images/RF_Confusion_Matrix.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_Confusion_Matrix.png)
+
+![Images/RF_Recall_Precision.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_Recall_Precision.png)
+
+![Images/LOG_ACC.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/LOG_ACC.png)
+
 ### Machine Learning Process Detail
 - Description of data pre-processing:  
     - As detailed in Data cleaning and exploration
@@ -127,6 +137,8 @@ For our initial statistical analysis we ran a multiple regression model on our d
     - Used same “Random State” when testing different models
 
 - Data enhancement for better feature fit creating a more reliable model (i.e. averages by team per season) 
+
+
 
 ## Presentation Slides
 
