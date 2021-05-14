@@ -102,7 +102,7 @@ These average statistics were applied to each game, and team performance stats f
 
 ### ERD Database Relationship Mapping
 
-![Images/Database_ERD_Final.png](Images/Database_ERD_Final.png)
+![Images/Database/Database_ERD_Final.png](Images/Database/Database_ERD_Final.png)
 
 
 ## Analysis
