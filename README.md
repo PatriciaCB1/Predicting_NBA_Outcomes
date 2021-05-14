@@ -7,7 +7,7 @@
 ## Topic
 Predicting NBA Game Outcomes
 - Utilize data from the National Basketball Association (NBA) 
-- Predict: game outcomes
+- Predict: Game outcomes
 - Understand:  predictive power of certain features
 - Determine:  whether the chosen inputs / features can be used to accurately predict game outcomes
 
@@ -21,26 +21,29 @@ As a team of NBA fans (and errant gamblers!) we were curious to see if we could 
 - Software: Anaconda 4.9.2, Jupyter Notebook 6.0.3 , Python 3.7.6, PostgreSQL, PGAdmin4
 - Data Warehouse:  AWS
 - Using: Pandas, NumPy, SQLalchemy extensions and functions
-- Algorithms: Random Forest model - will be testing additional models
+- Algorithms: Random Forest, Logistic Regression
 
 ### Source Data Description
 - Kaggle: NBA game data 2004 - 2020
 - Original Source:  https://www.nba.com/stats/
+- NBA API:  https://pypi.org/project/nba-api/ 
 - Kaggle Source:  https://www.kaggle.com/nathanlauga/nba-games
 - Data files used: 
-    - games.csv
-    - games_details.csv
-    - players.csv
-    - ranking.csv
+    - Games.csv
+    - Games_details.csv
+    - Players.csv
+    - Ranking.csv
     - teams.csv
 
 
+
 ## Research Questions
-- What features are important to determine game outcomes?
-- How will team outcomes be determined by player metrics (points, assists, steals, blocks, rebounds)?
-- Does the factor of Home vs Vistor team have an impact on game outcome?
-- Are there other “team” or “biometric” factors that determine game outcomes?
-- How will aggregate player performance inform a team outcome (win vs. loss)?
+- Which features are important to determine game outcomes?
+- How will team outcomes by season be determined by team metrics? (points, assists, steals, blocks, rebounds)?
+- Does the factor of Home vs Visitor team have an impact on game outcome?
+- Are there other team factors that determine game outcomes?
+- Which models best predict performance?
+
 
 ## Data Exploration
 
@@ -61,14 +64,14 @@ Data Cleaning Process Entailed:
 ### Data Exploration
 
 - Initial Exploration:  Identifying potential features
-- Started with over 50 columns that could provide features of interest with 2 key prominent identified segments:
-  - Offensive Stats
-  - Defensive Stats
-- Identifying redundant / unusable columns 
-  - Data type
-  - Duplicate stats/ metrics 
-- Attempt to identify what is causing overfitting of the model
-- Database relationship mapping 
+    - Started with over 50 columns that could provide features of interest with 2 key prominent identified segments:
+        - Offensive Stats
+        - Defensive Stats
+    - Identifying  redundant columns
+        - Data type
+        - Duplicate stats/ metrics 
+        - Attempt to identify what is causing overfitting of the model
+    - Database  relationship mapping 
 - Data types in each column across all data sets to ensure data types would work within our model
 - Creating: new rows to split out Home / Away and a new column for Team Win / Loss
 
@@ -90,6 +93,10 @@ Analysis to be undertaken:
   - Regression analysis to assess the validity of features
   - Visualization of correlation between features and outcomes
 
+### Description of the Statistical Analysis
+
+For our initial statistical analysis we ran a multiple regression model on our data. For this we first removed any columns or data types that we felt would not effect the outcomes of the games or would create issues in running the regression. From there we used the statsmodels module in Python to get our OLS Regression Results data that gave us all of our statistical data on how the different columns and features related to the outcome of having the Home Team Win. What we found was there was multiple columns that had statistically significant effects on the outcomes of games such as Home Team Points, Away Team FGM, Home Team Rebounds, and Away Team Assists. By running this initial statistical analysis it gave us a good starting point of seeing what features had the most significant impacts on the Home Team Wins.
+
 ## Machine Learning Model
 
 ### Approach
@@ -101,10 +108,25 @@ Analysis to be undertaken:
     - Easily handle outliers and non-linear data
     - Easier to use when not utilizing image or natural language
 - Started with 50+ potential features (in the process of narrowing)
-- Random Forest initial model - likely overfit due to feature choices (includes data for both win and loss on the same game)
-- Training & Testing sets: dropped “Home Win” column to make that our target.  
-  - Did not use random oversampling, undersampling or combination
-  - Sample robust enough to not require enhancement
+- Random Forest initial model - likely overfit due to feature choices 
+- Evolution of model:  started with Random Forest and tested out a Logistic Regression model in parallel.  
+    - Random Forest when refined provided 73.6% accuracy 
+    - Logistic Regression provided 67% accuracy
+
+### Machine Learning Process Detail
+- Description of data pre-processing:  
+    - As detailed in Data cleaning and exploration
+    - Game level data needed to be averaged and aggregated for an entire team over a full season
+- Feature selection:  
+    - Offensive stats
+    - Defensive stats
+    - Team name
+- How data was split into training & testing sets:
+    - Home Team Win “outcome”
+    - 75% / 25% split
+    - Used same “Random State” when testing different models
+
+- Data enhancement for better feature fit creating a more reliable model (i.e. averages by team per season) 
 
 ## Presentation Slides
 
