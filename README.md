@@ -24,6 +24,7 @@ As a team of NBA fans (and errant gamblers!) we were curious to see if we could 
 - Algorithms: Random Forest, Logistic Regression
 
 ### Source Data Description
+
 - Kaggle: NBA game data 2004 - 2020
 - Original Source:  https://www.nba.com/stats/
 - NBA API:  https://pypi.org/project/nba-api/ 
@@ -38,6 +39,7 @@ As a team of NBA fans (and errant gamblers!) we were curious to see if we could 
 
 
 ## Research Questions
+
 - Which features are important to determine game outcomes?
 - How will team outcomes by season be determined by team metrics? (points, assists, steals, blocks, rebounds)?
 - Does the factor of Home vs Visitor team have an impact on game outcome?
@@ -60,6 +62,29 @@ Data Cleaning Process Entailed:
   - Identifying and removal of duplicates (i.e. duplicates removed from datafiles then checked once in database leading to additional removals)
   - Ensured dummy variables for any columns with non-numeric values (i.e. team name) 
   - Utilized OneHotEncoder then merged the variables to the dataframe
+
+Data preprocessing
+- We decided to aggregate game-level data into averages by using groupby statements on Season_ID and Team_ID. We took average stats for both home and away teams
+- Average offensive stats
+    - total points
+    - 2 pt field goals made, attempted, and percentage made
+    - 3 pt field goals made, attempted, and percentage made
+    - free throws attempted, and percentage made
+    - assists
+- Average defensive stats
+    - Offensive rebounds
+    - Defensive rebounds
+    - Steals
+    - Blocks
+- Average team performance stats
+    - Turnovers
+    - Personal Fouls
+- Team factors
+    - Team name
+    - Away team or Home team
+    - Conference (Western or Eastern)
+    - 
+These average statistics were applied to each game, and team performance stats for individual games were dropped from our dataset. We then trained our model to assess whether or not the home team won
 
 ### Data Exploration
 
@@ -97,9 +122,10 @@ Analysis to be undertaken:
 
 For our initial statistical analysis we ran a multiple regression model on our data. For this we first removed any columns or data types that we felt would not effect the outcomes of the games or would create issues in running the regression. From there we used the statsmodels module in Python to get our OLS Regression Results data that gave us all of our statistical data on how the different columns and features related to the outcome of having the Home Team Win. What we found was there was multiple columns that had statistically significant effects on the outcomes of games such as Home Team Points, Away Team FGM, Home Team Rebounds, and Away Team Assists. By running this initial statistical analysis it gave us a good starting point of seeing what features had the most significant impacts on the Home Team Wins.
 
-![Images/Multiple%20Regression%20Stats.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/Multiple%20Regression%20Stats.png)
-
 ## Machine Learning Model
+
+### Model Choice
+We chose three models to predict performance: linear regression, logistic regression (LR), and a random forest classifier (RFC). We originally built our models by using team performance stats for individual games. However, we found that the RFC accuracy was 99% and the LR accuracy was 57%, so both models were unreliable predictors of performance. The RFC model was overfit because factors such as how many points a team scored easily predicted the outcome, which wouldn't be reliable for future predictions. With this realization, we optimized our model by improving our data pre-processing, and felt greater confidence in our RFC model with an accuracy score of 74% and a logistic regression accuracy score of 67%
 
 ### Approach
 - Create a classification model to determine game outcome (Win/ Loss)
@@ -115,14 +141,6 @@ For our initial statistical analysis we ran a multiple regression model on our d
     - Random Forest when refined provided 73.6% accuracy 
     - Logistic Regression provided 67% accuracy
 
-![Images/RF_AUC.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_AUC.png)
-
-![Images/RF_Confusion_Matrix.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_Confusion_Matrix.png)
-
-![Images/RF_Recall_Precision.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/RF_Recall_Precision.png)
-
-![Images/LOG_ACC.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Analysis/LOG_ACC.png)
-
 ### Machine Learning Process Detail
 - Description of data pre-processing:  
     - As detailed in Data cleaning and exploration
@@ -137,8 +155,6 @@ For our initial statistical analysis we ran a multiple regression model on our d
     - Used same “Random State” when testing different models
 
 - Data enhancement for better feature fit creating a more reliable model (i.e. averages by team per season) 
-
-
 
 ## Presentation Slides
 
