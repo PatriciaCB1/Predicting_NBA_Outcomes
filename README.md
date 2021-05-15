@@ -144,7 +144,7 @@ We chose three models to predict performance: linear regression, logistic regres
 
 ![Images/Analysis/RF_AUC.png](Images/Analysis/RF_AUC.png)
 
-![Images/Analysis/RF_Confusion_Matrix.png](Images/Analysis/RF_Confusion_Matrix.png)
+![Images/Analysis/Confusion Matrix.png](Images/Analysis/Confusion Matrix.png)
 
 ![Images/Analysis/RF_Recall_Precision.png](Images/Analysis/RF_Recall_Precision.png)
 
