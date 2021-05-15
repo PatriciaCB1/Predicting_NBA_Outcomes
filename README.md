@@ -102,8 +102,7 @@ These average statistics were applied to each game, and team performance stats f
 
 ### ERD Database Relationship Mapping
 
-![Images/ERD.png](https://github.com/PatriciaCB1/Predicting_NBA_Outcomes/blob/main/Images/Database_ERD_Final.png)
-
+![Images/Database/Database_ERD_Final.png](Images/Database/Database_ERD_Final.png)
 
 
 ## Analysis
@@ -121,6 +120,8 @@ Analysis to be undertaken:
 ### Description of the Statistical Analysis
 
 For our initial statistical analysis we ran a multiple regression model on our data. For this we first removed any columns or data types that we felt would not effect the outcomes of the games or would create issues in running the regression. From there we used the statsmodels module in Python to get our OLS Regression Results data that gave us all of our statistical data on how the different columns and features related to the outcome of having the Home Team Win. What we found was there was multiple columns that had statistically significant effects on the outcomes of games such as Home Team Points, Away Team FGM, Home Team Rebounds, and Away Team Assists. By running this initial statistical analysis it gave us a good starting point of seeing what features had the most significant impacts on the Home Team Wins.
+
+![Images/Analysis/Multiple%20Regression%20Stats.png](Images/Analysis/Multiple%20Regression%20Stats.png)
 
 ## Machine Learning Model
 
@@ -140,6 +141,14 @@ We chose three models to predict performance: linear regression, logistic regres
 - Evolution of model:  started with Random Forest and tested out a Logistic Regression model in parallel.  
     - Random Forest when refined provided 73.6% accuracy 
     - Logistic Regression provided 67% accuracy
+
+![Images/Analysis/RF_AUC.png](Images/Analysis/RF_AUC.png)
+
+![Images/Analysis/RF_Confusion_Matrix.png](Images/Analysis/RF_Confusion_Matrix.png)
+
+![Images/Analysis/RF_Recall_Precision.png](Images/Analysis/RF_Recall_Precision.png)
+
+![Images/Analysis/LOG_ACC.png](Images/Analysis/LOG_ACC.png)
 
 ### Machine Learning Process Detail
 - Description of data pre-processing:  
