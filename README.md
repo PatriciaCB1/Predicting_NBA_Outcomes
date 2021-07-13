@@ -177,8 +177,9 @@ https://docs.google.com/presentation/d/103ir_JitNAbp07oyHvgJAFLcFKm4zC7HRJB4_MHr
 
 https://public.tableau.com/profile/patricia.chapin#!/vizhome/NBADataAnalysis_16208723719400/NBAStatsDashboard
 
-## Overall Roles & Responsibilities
-- Square (Model): Josh Merenstein
-- Triangle (Database): Praveen Ravi
-- Circle (Visuals): Jerome Simmons
-- X (Tech Overseer + Presentation Deck): Patricia Chapin-Bayley
+## Team
+- Jerome Simmons
+- Patricia Chapin-Bayley
+- Praveen Ravi
+- Josh Merenstein
+
